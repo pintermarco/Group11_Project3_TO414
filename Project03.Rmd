@@ -47,6 +47,11 @@ savant$fielder_7 <- NULL
 savant$fielder_8 <- NULL
 savant$fielder_9 <- NULL
 
+savant$pfx_x <- as.integer(savant$pfx_x)
+savant$pfx_z <- as.integer(savant$pfx_z)
+savant$plate_x <- as.integer(savant$plate_x)
+savant$plate_z <- as.numeric(savant$plate_z)
+
 savant <- na.omit(savant)
 
 'savantmm <- as.data.frame(model.matrix(~. -1, data=savant))'
